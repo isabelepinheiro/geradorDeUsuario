@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personagens de DragonBall</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+  </head>
+  <body>
+    <header> 
+      <div class="logo">
+        <img src="imgs/dragonballZ.png" alt="logo">
+      </div>
+    </header>
+
+    <div class="titulo">
+      <h1>Personagens de Dragon Ball 🐉</h1>
+      <p>Explore e conheça os guerreiros mais poderosos do universo Dragon Ball.</p>
+    </div>
+
+<button id="btnControle">Tocar</button>
+
+<audio id="musica">
+  <source src="audio/sorriso-resplandecente.mpeg" type="audio/mpeg">
+</audio>
+    
+    <div class="formUser">
+      <!-- Info do genero -->
+      <div>
+        Gênero:
+        <input type="radio" name="g" checked value=""/> Ambos
+        <input type="radio" name="g" value="male" /> Homem
+        <input type="radio" name="g" value="female" /> Mulher
+      </div>
+
+      <!-- Info da Raca -->
+      <div>
+        Raça
+        <select id="race">
+          <option value="">Todas</option>
+          <option value="Saiyan">Sayajin</option>
+          <option value="Human">Humanos</option>
+          <option value="Android">Androides</option>
+          <option value="God">Deuses</option>
+          <option value="Angel">Anjos</option>
+        </select>
+      </div>
+
+      <button onclick="buscar()">Buscar Personagens</button>
+    </div>
+
+
+    <div class="allUsers">
+      <div class="user">
+        <div class="avatar">
+          <img src="https://dragonball-api.com/characters/goku_normal.webp" />
+        </div>
+        <div class="data">
+          <p>Goku</p>
+          <p>
+            <span>Sayajin - Male</span>
+          </p>
+          <p>
+            <span>Base KI:</span> <br />
+            <span>6000000</span>
+          </p>
+          <p>
+            <span>Total KI:</span> <br />
+            <span>6000000</span>
+          </p>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>O universo de Dragon Ball é cheio de guerreiros lendários e batalhas épicas.</p>
+      <p>© 2026 Dragon Ball Characters. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
